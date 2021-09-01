@@ -1,0 +1,150 @@
+// MARGIN & PADDING UTILITY CLASSES //
+
+// Define global spacing sizes with a map.
+$spacing-sizes: (
+    'auto': auto,
+    'none': 0rem,
+    'xxs': .25rem,  // 4px
+    'xs': .5rem,  // 8px
+    'sm': 1rem,   // 16px
+    'md': 1.5rem,  // 24px
+    'lg': 2rem,     // 32px
+    'xl': 3.5rem,  // 56px
+    'xxl': 5rem,    // 80px
+    '3xl': 6rem   // 96px
+) !default;
+
+// Define the spacing directions.
+$directions: (top, bottom, left, right);
+
+
+// Loop through the Sizing Map and  Directions.
+@each $name, $size in $spacing-sizes {
+    @each $direction in $directions {
+        //MARGIN
+        .m-#{$name} {
+            margin: $size !important;
+        }
+
+        .m-#{$direction}-#{$name} {
+            margin-#{$direction}: #{$size} !important;
+          }
+
+        .m-across-#{$name} {
+            margin-left: $size !important;
+            margin-right: $size !important;
+          }
+          
+        .m-up-down-#{$name} {
+            margin-bottom: $size !important;
+            margin-top: $size !important;
+        }
+
+        /* … */
+
+        //PADDING
+        .p-#{$name} {
+            margin: $size !important;
+        }
+          
+        .p-#{$direction}-#{$name} {
+            padding-#{$direction}: #{$size} !important;
+        }
+
+        .p-across-#{$name} {
+            padding-left: $size !important;
+            padding-right: $size !important;
+        }
+          
+        .p-up-down-#{$name} {
+            padding-bottom: $size !important;
+            padding-top: $size !important;
+        }
+    }
+}
+
+
+// BORDER UTILITY CLASSES //
+
+//BORDER WIDTH
+// Define global border widths with a map.
+$border-width: (
+    0: 0rem,//0px
+    1: .0625rem,//1px
+    2: .125rem,//2px
+    4: .25rem, // 4px
+    8: .5rem,  // 8px
+) !default;
+
+// Define the border-directions with a List
+$directions: (top, bottom, left, right);
+
+
+// Loop through the Border Width Map and Directions List.
+@each $name, $size in $border-width {
+    @each $direction in $directions {
+
+        //BORDER
+        .border-#{$name} {
+            border: $size !important;
+            border-style: solid !important;
+        }
+        
+        .border-#{$direction}-#{$name} {
+            border-#{$direction}: #{$size} !important;
+            border-style: solid !important;
+        }
+
+    }
+}
+
+
+//BORDER COLOR
+// Loop Uses $theme-colors Map Check Variables Partial
+@each $name, $color in $theme-colors {
+    .border-#{$name} {
+        border-color: $color!important;
+        border-style: solid !important;
+    }
+}
+
+
+//BORDER RADIUS 
+// Define global border radiuses with a map.
+$border-radius: (
+    null: .25rem,
+    -pill: 50rem,
+    -circle: 50%
+) !default;
+
+// Define the border radiuses directions with a List
+$directions: (top, bottom, left, right);
+
+
+// Loop through the border-radius Map and  Directions.
+@each $name, $size in $border-radius {
+    .rounded#{$name}{
+        border-radius: $size !important;
+    }
+}
+
+
+//BORDER RADIUS SIZES
+// // Define global border radiuses sizes with a map.
+$border-radius-sizes: (
+    0: 0rem,
+    1: .125rem, //smallest - 2px
+    2: .2rem, // Smaller - 3.2px
+    3: 0.3rem, // Larger - 4.8px
+    4: .5rem // Largest - 8px
+) !default;
+
+
+
+// Loop through the border-radiuses-sizes Map
+@each $name, $size in $border-radius-sizes {
+    .rounded-#{$name}{
+        border-radius: $size !important;
+    }
+}
+

@@ -1,0 +1,70 @@
+@mixin heading-base{
+    font-family:map-get($fonts , base);
+    font-weight: 700;
+    color: map-get($theme-colors , warning); 
+}
+
+
+@mixin heading($style) {
+    @if $style == "main-heading" {
+        @include heading-base;
+        font-size: map-get($font-sizes, xxl);
+        line-height: $line-height-base;
+    }
+
+    @else if $style == "sub-heading" {
+        @include heading-base;
+        font-size: map-get($font-sizes, xl);
+        line-height: $line-height-base;
+    }
+
+}
+
+.main-heading{
+    @include heading(main-heading);
+}
+
+.sub-heading{
+    @include heading(sub-heading);
+ }
+
+
+
+
+
+
+// USAGE
+// @include heading(main-heading)
+// @include heading(sub-heading)
+
+
+
+// @mixin body-base($weight:400, $color:$body-color){
+//     font-family: $font-family;
+//     font-size: 1.125rem;
+//     font-weight: $weight;
+//     line-height: 1.75rem;
+//     color: $color
+// }
+
+
+// @mixin body($style) {
+//     @if $style == "main-body" {
+//         @include body-base;
+//     }
+
+//     @else if $style == "main-body--black" {
+//         @include body-base($weight, $color);
+//     }
+
+// }
+
+// // USAGE
+// // @include body(main-body)
+// // @include body(main-body__bold--black)
+
+
+// body{
+//     font-family: $font-family;
+
+// }
