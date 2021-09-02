@@ -2,6 +2,7 @@
 # Ignore DS_Store
 .DS_Store
 
-# Ignore DS_Store
+# Ignore CSS files
 css/
+*.css
 
