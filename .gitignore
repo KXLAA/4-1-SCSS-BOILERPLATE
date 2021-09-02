@@ -2,9 +2,5 @@
 # Ignore DS_Store
 .DS_Store
 
-# Ignore CSS files
-main.css
-main.css.map
-
 
 
