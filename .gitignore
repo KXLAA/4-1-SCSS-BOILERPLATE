@@ -2,7 +2,6 @@
 # Ignore DS_Store
 .DS_Store
 
-*.css
-*.css.map
-
+# Ignore DS_Store
+css/
 
