@@ -1,38 +1,62 @@
-//FONT VARIABLES 
-$fonts: (
-    accent: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-    base: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
-    monospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
-) !default;
+/// **** FONT VARIABLES **** ///
+
+//Font family
+$font-family-sans-serif: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+
+//Body Font Sizes
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+//Body Line Heights
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
 
 
+//Heading Font Sizes
+$h1-font-size:                4.25rem;              //  68px
+$h2-font-size:                2.625rem;             //  42px
+$h3-font-size:                2rem;                 //  32px
+$h4-font-size:                1.625rem;             //  26px
+$h5-font-size:                $font-size-base;      //  16px
 
 
-$font-sizes: (
-    'xxs': 0.75rem, // 12px
-    'xs': 0.875rem, // 14px
-    'base': 1rem,     // 16px
-    'md': 1.25rem,  // 30px
-    'lg': 1.5rem,   // 24px
-    'xl': 2rem,     // 32px
-    'xxl': 3rem     // 48px
-) !default;
+//Heading Line Heights - All divisible by 8 for vertical Rhythm
+$h1-line-height:                4.5rem;              //  72px
+$h2-line-height:                3rem;                //  48px
+$h3-line-height:                3rem;                //  48px
+$h4-line-height:                3rem;                //  48px
+$h5-line-height:                $line-height-base;   //  24px
 
 
-$line-height-base: 1.5;
+//Font Weights
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+$font-weight-base:            $font-weight-normal;
 
 
 //COLORS VARIABLES 
-$theme-colors: (
-    'primary': #d15f01,
-    'secondary': #30629e,
-    'success': #76b524,
-    'info': #8ebede,
-    'warning': #ffc107,
-    'danger': #ff0000,
-    'light': #c7c7c7,
-    'dark': #494949
-) !default;
+
+// Descriptive naming
+$color-gray-light: #f3f3f3;
+$color-gray-dark: #494949;
+$color-red: red;
+$color-red-stage:#d15f01;
+$color-azure:#30629e;
+$color-lima:#76b524;
+$color-black:#000000;
+$color-white:#FFFFFF;
+
+
+
+// Functional naming
+$heading-color: $color-black;
+$body-color: $color-gray-dark;
+$border-color:$color-black;
+$button-bg-color:$color-red-stage;
 
 
 

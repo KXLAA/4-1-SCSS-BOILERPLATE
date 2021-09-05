@@ -166,3 +166,16 @@ $breakpoints: (
 // ===== Usage ===== //
 //   @include retina-images("url", width, height);
 
+
+
+// BORDER COLOR MIXIN
+@mixin border-color ($color: $border-color) {
+  border-color: $color!important;
+  border-style: solid !important;
+}
+
+// ===== Usage ===== //
+//   @include border-color(color);
+
+
+

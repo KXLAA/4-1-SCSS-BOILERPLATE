@@ -7,11 +7,10 @@ $spacing-sizes: (
     'xxs': .25rem,  // 4px
     'xs': .5rem,  // 8px
     'sm': 1rem,   // 16px
-    'md': 1.5rem,  // 24px
-    'lg': 2rem,     // 32px
-    'xl': 3.5rem,  // 56px
-    'xxl': 5rem,    // 80px
-    '3xl': 6rem   // 96px
+    'md': 2rem,     // 32px
+    'lg': 3.5rem,  // 56px
+    'xl': 5rem,    // 80px
+    'xxl': 6rem   // 96px
 ) !default;
 
 // Define the spacing directions.
@@ -88,25 +87,19 @@ $directions: (top, bottom, left, right);
         .border-#{$name} {
             border: $size !important;
             border-style: solid !important;
+            @include border-color;
         }
         
         .border-#{$direction}-#{$name} {
             border-#{$direction}: #{$size} !important;
             border-style: solid !important;
+            @include border-color;
         }
 
     }
 }
 
 
-//BORDER COLOR
-// Loop Uses $theme-colors Map Check Variables Partial
-@each $name, $color in $theme-colors {
-    .border-#{$name} {
-        border-color: $color!important;
-        border-style: solid !important;
-    }
-}
 
 
 //BORDER RADIUS 

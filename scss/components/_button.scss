@@ -1,6 +1,6 @@
 @mixin button-base{
-    color:map-get($theme-colors, light);
-    background:map-get($theme-colors, primary);
+    color:$color-white;
+    background:$button-bg-color;
     display: inline-block;
     text-decoration:none;
     border-radius: .3125rem;
@@ -9,12 +9,12 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background:darken(map-get($theme-colors, primary),8%);
+        background:darken($button-bg-color, 8%);
         transform: translateX(0rem) translateY(-0.3125rem);
     }
 
     &:active {
-        background:darken(map-get($theme-colors, primary),25%);
+        background:darken($button-bg-color, 25%);
         transform: translateX(0rem) translateY(.125rem);
     } 
 }
