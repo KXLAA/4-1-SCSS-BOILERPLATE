@@ -1,4 +1,5 @@
-//CONTAINER
+/// **** LAYOUT CONTAINER **** ///
+
 // Map with Container Max-widths
 $container-max-widths: (
   sm: 540px,
@@ -8,7 +9,7 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-
+// Mixins utilizing map
 @mixin container{
     margin: 0 auto;
     max-width: map-get($container-max-widths, xxl);
@@ -38,16 +39,16 @@ $container-max-widths: (
 //@include container;
 
 
+/// **** BREAKPOINT MANAGER **** ///
 
-//BREAKPOINT MANAGER
 // Map with breakpoints
 $breakpoints: (
-    'xxs': 23.4375rem,  // 375px
-    'xs': 30rem,   // 480px
-    'sm': 48rem,   // 768px
-    'md': 62rem,   // 992px
-    'lg': 75rem,   // 1200px
-    'xl': 90rem    // 1440px
+    xxs:  22rem,      // 352px
+    xs:   30rem,      // 480px
+    sm:   48rem,      // 768px
+    md:   62rem,      // 992px
+    lg:   75rem,      // 1200px
+    xl:   90rem       // 1440px
 ) !default;
 
 
@@ -83,8 +84,8 @@ $breakpoints: (
 //@include respond-to(xl){}
 
 
+/// **** FLEX-BOX TOOLKIT **** ///
 
-//FLEX-BOX TOOLKIT
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -165,17 +166,5 @@ $breakpoints: (
 
 // ===== Usage ===== //
 //   @include retina-images("url", width, height);
-
-
-
-// BORDER COLOR MIXIN
-@mixin border-color ($color: $border-color) {
-  border-color: $color!important;
-  border-style: solid !important;
-}
-
-// ===== Usage ===== //
-//   @include border-color(color);
-
 
 

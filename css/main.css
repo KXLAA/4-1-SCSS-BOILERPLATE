@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+/* Remove default styles on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -75,7 +81,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.main-heading {
+.heading--main {
   font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
   font-weight: 700;
   color: #000000;
@@ -83,7 +89,7 @@ select {
   line-height: 4.5rem;
 }
 
-.sub-heading {
+.heading--sub {
   font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
   font-weight: 700;
   color: #000000;
@@ -91,8 +97,24 @@ select {
   line-height: 3rem;
 }
 
-/* Additional Base Stylesheets */
-.main__button {
+.body--main {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #494949;
+}
+
+.body--bold {
+  font-family: "Segoe UI", Tahoma, "Geneva", Verdana, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #494949;
+  font-weight: 700;
+}
+
+.button--main {
   color: #FFFFFF;
   background: #d15f01;
   display: inline-block;
@@ -101,6 +123,17 @@ select {
   padding: 1.125rem 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
+}
+.button--main:hover {
+  background: #a84d01;
+  transform: translateX(0rem) translateY(-0.3125rem);
+}
+.button--main:active {
+  background: #522500;
+  transform: translateX(0rem) translateY(0.125rem);
+}
+
+.button--full-width {
   color: #FFFFFF;
   background: #d15f01;
   display: inline-block;
@@ -112,21 +145,11 @@ select {
   display: block !important;
   width: 100% !important;
 }
-.main__button:hover {
+.button--full-width:hover {
   background: #a84d01;
   transform: translateX(0rem) translateY(-0.3125rem);
 }
-.main__button:active {
+.button--full-width:active {
   background: #522500;
   transform: translateX(0rem) translateY(0.125rem);
-}
-.main__button:hover {
-  background: #a84d01;
-  transform: translateX(0rem) translateY(-0.3125rem);
-}
-.main__button:active {
-  background: #522500;
-  transform: translateX(0rem) translateY(0.125rem);
-}
-
-/* Additional Component Stylesheets *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

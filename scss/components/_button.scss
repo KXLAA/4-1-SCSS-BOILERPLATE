@@ -1,5 +1,5 @@
 @mixin button-base{
-    color:$color-white;
+    color:$button-color;
     background:$button-bg-color;
     display: inline-block;
     text-decoration:none;
@@ -25,8 +25,11 @@
     width: 100% !important;
 }
 
-.main__button{
+.button--main{
     @include button-base;
+}
+
+.button--full-width{
     @include full-width-button;
 }
 
