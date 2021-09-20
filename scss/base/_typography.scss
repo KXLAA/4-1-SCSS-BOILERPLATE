@@ -62,20 +62,20 @@ $body-fs: (
   font-size: map-get($body-fs, md);
   font-weight: $font-weight-normal;
   line-height: $line-height-base;
-  color: $body-color;
 }
 
 
 @mixin body($style) {
   @if $style == "main" {
     @include body-base;
+    color: $body-main-color;
   }
 
   @else if $style == "bold" {
     @include body-base;
     font-weight:$font-weight-bold;
+    color: $body-main-color;
   }
-
 }
 
 // ===== Usage ===== //

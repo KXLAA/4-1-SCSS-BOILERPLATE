@@ -34,7 +34,6 @@ $font-weight-light:           300;
 $font-weight-normal:          400;
 $font-weight-bold:            700;
 $font-weight-bolder:          bolder;
-$font-weight-base:            $font-weight-normal;
 
 
 /// **** COLORS VARIABLES  **** ///
@@ -52,11 +51,17 @@ $color-white:#FFFFFF;
 
 
 // Functional naming
-$button-color:$color-white;
+$button-primary-color:$color-white;
+$button-primary-bg-color:$color-red-stage;
+
+$button-secondary-color:$color-white;
+$button-secondary-bg-color:$color-azure;
+
+
+
 $heading-color: $color-black;
-$body-color: $color-gray-dark;
+$body-main-color: $color-gray-dark;
 $border-color:$color-black;
-$button-bg-color:$color-red-stage;
 
 
 
@@ -71,13 +76,4 @@ $shadows: (
     md: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
     lg: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
     xl: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-) !default;
-
-
-
-/// **** TRANSITIONS VARIABLES  **** ///
-$transitions: (
-    slow: .5s,
-    med: .3s,
-    fast: .1s
 ) !default;

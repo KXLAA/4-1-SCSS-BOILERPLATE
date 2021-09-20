@@ -121,7 +121,8 @@ $breakpoints: (
 
 
 
-//PSEUDO ELEMENTS 
+/// **** PSEUDO ELEMENTS TOOLKIT **** ///
+
 @mixin pseudo(
   $width: 100%,
   $height: 100%,
@@ -139,7 +140,9 @@ $breakpoints: (
 //   @include pseudo(width:, height:);
 
 
-//DIMENSIONS 
+
+/// **** DIMENSIONS TOOLKIT **** ///
+
 @mixin box($width, $height: $width) {
     width: $width;
     height: $height;
@@ -151,7 +154,8 @@ $breakpoints: (
 
 
 
-//RETINA IMAGES
+/// **** RETINA IMAGES **** ///
+
 @mixin retina-images($image, $width, $height) {
     @media (min--moz-device-pixel-ratio: 1.3),
            (-o-min-device-pixel-ratio: 2.6/2),
