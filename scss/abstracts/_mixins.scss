@@ -43,12 +43,12 @@ $container-max-widths: (
 
 // Map with breakpoints
 $breakpoints: (
-    xxs:  22rem,      // 352px
-    xs:   30rem,      // 480px
-    sm:   48rem,      // 768px
-    md:   62rem,      // 992px
-    lg:   75rem,      // 1200px
-    xl:   90rem       // 1440px
+    xxs:  352px,
+    xs:   480px,
+    sm:   768px,
+    md:   992px,
+    lg:   1200px,
+    xl:   1440px
 ) !default;
 
 
