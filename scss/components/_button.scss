@@ -31,7 +31,6 @@
 }
 
 // ===== Usage ===== //
-
 .button--secondary{
     @include button-base;
     color:$button-secondary-color;
@@ -49,8 +48,19 @@
 }
 
 
-
 .button--full-width{
     @include full-width-button;
 }
 
+//Hover & Active States
+@mixin hover-active{
+    &:hover {
+        background:darken($button-primary-bg-color, 8%);
+        transform: translateX(0rem) translateY(-0.3125rem);
+    }
+
+    &:active {
+        background:darken($button-primary-bg-color, 25%);
+        transform: translateX(0rem) translateY(.125rem);
+    }
+}
